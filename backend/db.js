@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
+
 const mongoURI='mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false';
 
-const connectMongo=()=>{
+
+const CallMongo=()=>{
     mongoose.connect(mongoURI,()=>{
-       console.log('mongo connection successfull');
+        console.log('mongo connected successfully!');
     })
 }
-module.exports=connectMongo;
+module.exports=CallMongo;
