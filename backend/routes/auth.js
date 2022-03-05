@@ -42,10 +42,10 @@ const data={
     id:user.id
   }
 }
-const jwtData=jwt.sign(data,JWT_secret);
-console.log(jwtData);
+const authData=jwt.sign(data,JWT_secret);
+console.log(authData);
 // res.json(user);
-res.json({jwtData})
+res.json({authData})
 }
 
 catch(error){
