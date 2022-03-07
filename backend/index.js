@@ -1,7 +1,7 @@
 const CallMongo = require("./db");
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 5000;
 CallMongo();
 // app.get("/", (req, res) => {
 //   res.send("Hello World!");
